@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lente Libre - Portafolio profesional de fotografía. Bodas, retratos, paisajes y eventos. Capturamos momentos que cuentan historias.">
+  <meta name="theme-color" content="#111111">
+  <title>Lente Libre | Portafolio Fotográfico</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="header">
+    <a href="#inicio" class="logo">LENTE<span>LIBRE.</span></a>
+
+    <nav class="nav" id="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#galeria">Galería</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="theme-button" id="themeToggle" aria-label="Cambiar tema">
+        ☀
+      </button>
+
+      <button class="menu-button" id="menuToggle" aria-label="Abrir menú">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- INICIO -->
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">FOTOGRAFÍA PROFESIONAL</p>
+
+        <h1>Capturando momentos,<br>
+          <span>creando recuerdos.</span>
+        </h1>
+
+        <p class="hero-description">
+          Cada imagen cuenta una historia. Descubre el mundo
+          a través de mi lente y conserva para siempre
+          los momentos más especiales.
+        </p>
+
+        <a href="#galeria" class="btn-primary">Explorar fotografías</a>
+      </div>
+
+      <div class="hero-bottom">
+        <span>PORTAFOLIO 2026</span>
+        <span>ARTE · LUZ · EMOCIÓN</span>
+      </div>
+    </section>
+
+    <!-- PRESENTACIÓN -->
+    <section class="intro section-padding">
+      <p class="section-label">BIENVENIDO A LENTE LIBRE</p>
+      <h2>La belleza está en los detalles.</h2>
+      <p>
+        Me apasiona transformar instantes cotidianos en imágenes
+        extraordinarias. Mi trabajo combina creatividad, técnica
+        y sensibilidad para contar historias auténticas.
+      </p>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="gallery-section section-padding" id="galeria">
+
+      <div class="section-heading">
+        <div>
+          <p class="section-label">MI TRABAJO</p>
+          <h2>Galería fotográfica</h2>
+        </div>
+        <p class="heading-description">
+          Una selección de imágenes que reflejan mi pasión por la fotografía.
+        </p>
+      </div>
+
+      <!-- FILTROS -->
+      <div class="filters">
+        <button class="filter-btn active" data-filter="todos">Todas</button>
+        <button class="filter-btn" data-filter="bodas">Bodas</button>
+        <button class="filter-btn" data-filter="retratos">Retratos</button>
+        <button class="filter-btn" data-filter="paisajes">Paisajes</button>
+        <button class="filter-btn" data-filter="eventos">Eventos</button>
+      </div>
+
+      <!-- FOTOGRAFÍAS -->
+      <div class="gallery-grid">
+
+        <div class="gallery-item" data-category="bodas">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800" alt="Fotografía de boda elegante" loading="lazy">
+          <div class="image-info"><h3>Amor eterno</h3><span>Bodas</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="retratos">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800" alt="Retrato femenino profesional" loading="lazy">
+          <div class="image-info"><h3>Esencia natural</h3><span>Retratos</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="paisajes">
+          <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800" alt="Paisaje de montañas y lago" loading="lazy">
+          <div class="image-info"><h3>Horizontes</h3><span>Paisajes</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="eventos">
+          <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800" alt="Evento con luces y celebración" loading="lazy">
+          <div class="image-info"><h3>Noches especiales</h3><span>Eventos</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="retratos">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800" alt="Retrato masculino" loading="lazy">
+          <div class="image-info"><h3>Personalidad</h3><span>Retratos</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="paisajes">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800" alt="Paisaje natural al atardecer" loading="lazy">
+          <div class="image-info"><h3>Luz del atardecer</h3><span>Paisajes</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="bodas">
+          <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=800" alt="Pareja de novios" loading="lazy">
+          <div class="image-info"><h3>Un día inolvidable</h3><span>Bodas</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="eventos">
+          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800" alt="Celebración de evento" loading="lazy">
+          <div class="image-info"><h3>Celebraciones</h3><span>Eventos</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="paisajes">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800" alt="Montañas majestuosas" loading="lazy">
+          <div class="image-info"><h3>La grandeza natural</h3><span>Paisajes</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="retratos">
+          <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=800" alt="Retrato femenino artístico" loading="lazy">
+          <div class="image-info"><h3>Miradas únicas</h3><span>Retratos</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="bodas">
+          <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800" alt="pareja de novios celebrando su boda " loading="lazy">
+          <div class="image-info"><h3>Detalles de amor</h3><span>Bodas</span></div>
+        </div>
+
+        <div class="gallery-item" data-category="eventos">
+          <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?w=800" alt="Concierto y evento musical" loading="lazy">
+          <div class="image-info"><h3>Momentos únicos</h3><span>Eventos</span></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VISOR LIGHTBOX -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" id="closeLightbox" aria-label="Cerrar">&times;</button>
+      <button class="lightbox-prev" id="prevImage" aria-label="Imagen anterior">&#10094;</button>
+
+      <div class="lightbox-content">
+        <img src="" alt="Fotografía ampliada" id="lightboxImage">
+        <p id="lightboxCaption"></p>
+      </div>
+
+      <button class="lightbox-next" id="nextImage" aria-label="Imagen siguiente">&#10095;</button>
+    </div>
+
+    <!-- SOBRE MI -->
+    <section class="about-section section-padding" id="sobre-mi">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=900" alt="Fotógrafo trabajando con su cámara" loading="lazy">
+      </div>
+
+      <div class="about-content">
+        <p class="section-label">CONOCE AL FOTÓGRAFO</p>
+        <h2>Hola, soy alejandra.</h2>
+
+        <p>
+          Soy una fotógrafa independiente apasionada por capturar
+          emociones, paisajes y momentos irrepetibles. Creo que
+          una buena fotografía no solo muestra una imagen:
+          transmite una historia.
+        </p>
+
+        <p>
+          Mi compromiso es ofrecer experiencias fotográficas
+          auténticas, con atención a cada detalle y resultados
+          de calidad profesional.
+        </p>
+
+        <h3>Mi equipo fotográfico</h3>
+
+        <ul class="equipment-list">
+          <li>Cámara profesional Canon EOS</li>
+          <li>Lentes de 50 mm y 70-200 mm</li>
+          <li>Trípode profesional</li>
+          <li>Iluminación y flash externo</li>
+          <li>Software de edición fotográfica</li>
+        </ul>
+
+        <a href="#contacto" class="btn-primary">Trabajemos juntos</a>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+
+<section class="services-section section-padding" id="servicios">
+  <div class="section-heading centered">
+    <div>
+      <p class="section-label">LO QUE OFREZCO</p>
+      <h2>Servicios y tarifas</h2>
+      <p class="heading-description">
+        Experiencias fotográficas para conservar tus mejores recuerdos.
+      </p>
+    </div>
+  </div>
+
+  <div class="services-grid">
+
+    <article class="service-card">
+      <span class="service-number">01</span>
+      <div class="service-icon">♡</div>
+      <h3>Fotografía de bodas</h3>
+      <p>Capturamos cada emoción y detalle de tu día especial.</p>
+      <div class="service-price">Desde $1.200.000</div>
+      <span class="price-note">Pesos colombianos</span>
+    </article>
+
+    <article class="service-card">
+      <span class="service-number">02</span>
+      <div class="service-icon">◎</div>
+      <h3>Sesiones de retratos</h3>
+      <p>Retratos profesionales, personales y familiares.</p>
+      <div class="service-price">Desde $150.000</div>
+      <span class="price-note">Pesos colombianos</span>
+    </article>
+
+    <article class="service-card">
+      <span class="service-number">03</span>
+      <div class="service-icon">⌖</div>
+      <h3>Fotografía de paisajes</h3>
+      <p>La naturaleza y sus escenarios desde una mirada artística.</p>
+      <div class="service-price">Desde $250.000</div>
+      <span class="price-note">Pesos colombianos</span>
+    </article>
+
+    <article class="service-card">
+      <span class="service-number">04</span>
+      <div class="service-icon">✧</div>
+      <h3>Fotografía de eventos</h3>
+      <p>Conservamos los recuerdos de tus celebraciones.</p>
+      <div class="service-price">Desde $350.000</div>
+      <span class="price-note">Pesos colombianos</span>
+    </article>
+
+  </div>
+  <p class="price-disclaimer">
+    * Las tarifas son aproximadas y pueden variar según la duración,
+    ubicación y características de cada sesión.
+  </p>
+</section>
+
+    <!-- CONTACTO -->
+    <section class="contact-section section-padding" id="contacto">
+      <div class="contact-heading">
+        <p class="section-label">HABLEMOS DE TU PROYECTO</p>
+        <h2>¿Creamos algo extraordinario?</h2>
+        <p>
+          Cuéntame qué tipo de sesión necesitas y me pondré
+          en contacto contigo.
+        </p>
+      </div>
+
+      <form id="contactForm" class="contact-form">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Nombre completo</label>
+            <input type="text" id="name" placeholder="Tu nombre" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" placeholder="correo@ejemplo.com" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="service">Tipo de fotografía</label>
+          <select id="service" required>
+            <option value="">Selecciona un servicio</option>
+            <option>Bodas</option>
+            <option>Retratos</option>
+            <option>Paisajes</option>
+            <option>Eventos</option>
+            <option>Otro servicio</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Fecha aproximada de la sesión</label>
+          <input type="date" id="date">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Cuéntame sobre tu sesión</label>
+          <textarea id="message" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary submit-btn">
+          Enviar solicitud
+        </button>
+
+        <p id="formMessage" class="form-message" role="status"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <a href="#inicio" class="logo">LENTE<span>LIBRE.</span></a>
+
+    <p>La fotografía es el arte de detener el tiempo.</p>
+
+    <p class="copyright">
+      © 2026 Lente Libre. Todos los derechos reservados.
+    </p>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Volver arriba">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
